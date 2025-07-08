@@ -9,6 +9,17 @@
 <body>
     <button onclick="printMovies()">Cargar Peliculas</button>
     <section id="movie-section" ></section>
+    <div class="contenedor-formulario">
+        <h2>¿Quieres agregar un libro?</h2>
+        <form id="formMovie">
+            <input type="text" id="title" placeholder="Título" required /><br>
+            <input type="text" id="director" placeholder="Director" required /><br>
+            <input type="text" id="description" placeholder="Descripción" required /><br>
+            <input type="text" id="scienceField" placeholder="Descripción de la pelicula" /><br>
+            <input type="text" id="imagen" placeholder="Descripción de la pelicula" /><br><br>
+            <button type="submit">Agregar Pelicula</button>
+        </form>
+    </div>
     <script src="../src\service.js"></script>
 </body>
 </html>

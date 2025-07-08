@@ -8,7 +8,7 @@
       "description": "Un hombre se ve atrapado en un bucle temporal tras descubrir una extraña máquina. Un thriller de ciencia ficción inteligente que plantea preguntas sobre el tiempo y la causalidad.",
       "scienceField": "Ciencia ficción",
       "status": false,
-      "imagen":"imagenes/cronocrimenes.jpg",
+      "imagen": "imagenes/cronocrimenes.jpg",
       "trailer": ""
     },
     {
@@ -19,7 +19,7 @@
       "description": "Miguel de Unamuno se enfrenta a sus principios durante el inicio de la Guerra Civil. Una reflexión sobre el poder, la conciencia y el pensamiento libre.",
       "scienceField": "Ciencia ficción",
       "status": false,
-      "imagen":"imagenes/mienttas-dure-la-guerra.jpg",
+      "imagen": "imagenes/mienttas-dure-la-guerra.jpg",
       "trailer": ""
     },
     {
@@ -87,6 +87,14 @@
       "status": false,
       "imagen": "imagenes/un-monstruo-viene-a-verme.jpg",
       "trailer": ""
+    },
+    {
+      "id": "c986",
+      "title": "ffds",
+      "director": "dfdf",
+      "scienceField": "fsdf",
+      "description": "ddsfd",
+      "imagen": "dfd"
     }
   ]
 }
