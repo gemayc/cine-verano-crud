@@ -6,17 +6,15 @@
       "age": "2007",
       "director": "Nacho Vigalondo",
       "description": "Un hombre se ve atrapado en un bucle temporal tras descubrir una extraña máquina. Un thriller de ciencia ficción inteligente que plantea preguntas sobre el tiempo y la causalidad.",
-    
-      "imagen": "imagenes/cronocrimenes.jpg"
+      "imagen": "https://cdn.cinematerial.com/p/297x/sto2rug0/los-cronocrimenes-spanish-movie-poster-md.jpg?v=1472430083"
     },
     {
       "id": "2",
       "title": "Mientras dure la guerra",
       "age": "2019",
-      "director": "Drama histórico",
+      "director": "Alejandro Amenábar",
       "description": "Miguel de Unamuno se enfrenta a sus principios durante el inicio de la Guerra Civil. Una reflexión sobre el poder, la conciencia y el pensamiento libre.",
-     
-      "imagen": "imagenes/mienttas-dure-la-guerra.jpg"
+      "imagen": "https://cdn.cinematerial.com/p/297x/hdfwyq8i/mientras-dure-la-guerra-spanish-movie-poster-md.jpg?v=1564053383"
     },
     {
       "id": "3",
@@ -24,8 +22,7 @@
       "age": "2017",
       "director": "Hatem Khraiche",
       "description": "Una joven criada en una nave espacial descubre que su vida forma parte de un experimento secreto. Una historia que cuestiona la ética científica y la manipulación.",
-     
-      "imagen": "imagenes/orbita9.jpg"
+      "imagen": "https://cdn.cinematerial.com/p/297x/pw2q8mb8/orbita-9-spanish-movie-poster-md.jpg?v=1489076394"
     },
     {
       "id": "4",
@@ -33,17 +30,7 @@
       "age": "2016",
       "director": "Alberto Rodríguez",
       "description": "La historia real de Francisco Paesa, espía y estafador, que desafió al gobierno español. Un juego de engaños que explora el poder, la política y la inteligencia financiera.",
-     
-      "imagen": "imagenes/el-hombre-de-las-mil-caras.jpg"
-    },
-    {
-      "id": "5",
-      "title": "Eva",
-      "age": "2011",
-      "director": "Kike Maíllo",
-      "description": "En un futuro donde los robots forman parte de la vida cotidiana, un ingeniero vuelve a su ciudad natal para diseñar un niño robot y se reencuentra con su pasado.",
-     
-      "imagen": "imagenes/eva (4).jpg"
+      "imagen": "https://cdn.cinematerial.com/p/297x/746ix04e/el-hombre-de-las-mil-caras-spanish-movie-poster-md.jpg?v=1471520479"
     },
     {
       "id": "6",
@@ -51,8 +38,7 @@
       "age": "2006",
       "director": "Guillermo del Toro",
       "description": "En la posguerra española, una niña escapa a un mundo fantástico para enfrentar la dura realidad. Una fábula poderosa que mezcla historia, mitología y psicología.",
-     
-      "imagen": "imagenes/el-laberinto-de-fauno.jpg"
+      "imagen": "https://image.tmdb.org/t/p/w1280/gtce25cra64QLmnbK6dnqzfRcRz.jpg"
     },
     {
       "id": "7",
@@ -60,8 +46,7 @@
       "age": "2016",
       "director": "Mateo Gil",
       "description": "Un hombre decide congelarse tras una enfermedad terminal con la esperanza de ser revivido en el futuro. Un drama existencial sobre los límites de la medicina.",
-    
-      "imagen": "imagenes/proyecto-lazaro.jpg"
+      "imagen": "https://image.tmdb.org/t/p/w1280/1TSETMXX3ncT9lPtsKzvo7u1sdu.jpg"
     },
     {
       "id": "8",
@@ -69,8 +54,15 @@
       "age": "2016",
       "director": "J. A. Bayona",
       "description": "Un niño se enfrenta a la enfermedad de su madre con la ayuda de un monstruo imaginario. Una historia emocional sobre el poder de la mente y el proceso del duelo.",
-
-      "imagen": "imagenes/un-monstruo-viene-a-verme.jpg"
+      "imagen": "https://image.tmdb.org/t/p/w1280/bBPDstXaaQAGueDMVTS29vhHLfs.jpg"
+    },
+    {
+      "id": "9",
+      "title": "Eva",
+      "age": "2011",
+      "director": "Kike Maíllo",
+      "description": "En un futuro donde los robots forman parte de la vida cotidiana, un ingeniero vuelve a su ciudad natal para diseñar un niño robot y se reencuentra con su pasado.",
+      "imagen": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/fYGf09qvwGmebnQJ4C58wp2Zwtv.jpg"
     }
   ]
 }

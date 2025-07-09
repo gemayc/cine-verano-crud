@@ -11,18 +11,49 @@
         <h1 class="title-app"> 🎬 APP CINE DE VERANO</h1>
        
         <button onclick="printMovies()" class="button-print">Cargar Peliculas</button>
+         <button type="submit" class="button-print" onclick="openModal()">Agregar Pelicula</button>
     
     </div>
     <section class="container-movies" id="movie-section" ></section>
-    <div class="contenedor-formulario">
+    <!-- <div class="contenedor-formulario">
         <h2>¿Quieres agregar una Pelicula?</h2>
         <form id="formMovie">
             <input type="text" id="title" placeholder="Título" required /><br>
             <input type="text" id="director" placeholder="Director" required /><br>
             <input type="text" id="description" placeholder="Descripción" required /><br>
-            <input type="text" id="age" placeholder="Año Pelicula"/><br><br>
+            <input type="text" id="age" placeholder="Año Pelicula"/><br>
+            <input type="text" id="url" placeholder="Inserta url" required /><br><br>
             <button type="submit">Agregar Pelicula</button>
         </form>
+    </div> -->
+  <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Añadir Nueva Película</h2>
+            <form id="formMovie">
+                <div class="form-group">
+                    <label for="title">Título:</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="director">Director:</label>
+                    <input type="text" id="director" name="director" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Año:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="imagen">URL de la imagen:</label>
+                    <input type="url" id="imagen" name="imagen" placeholder="https://ejemplo.com/imagen.jpg">
+                </div>
+                <div class="form-group">
+                    <label for="description">Descripción:</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Guardar Película</button>
+            </form>
+        </div>
     </div>
 
 

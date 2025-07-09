@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
      background-color: #141414;
     color: #f5f5f1;
-    accent: #e50914;
+    /* accent: #e50914; */
 }
 
 .container-titulos {
@@ -28,6 +28,7 @@ img {
     margin: 0 auto;
     margin-top: 10px;
     box-shadow: 0 6px 20px rgba(255, 254, 254, 0.6);
+    border-radius: 10px;
     /* transition: all 0.3s ease;
        cursor: pointer; */
 
@@ -77,3 +78,104 @@ img {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
 }
+
+/* Modal: Fondo oscuro que cubre toda la pantalla y desenfoca el fondo */
+  .modal {
+     
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Fijo en la pantalla */
+  z-index: 1000; /* Encima del resto */
+  left: 0;
+  top: 0;
+  width: 100%; /* Que el fondo oscuro ocupe toda la pantalla */
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  backdrop-filter: blur(5px); /* Efecto de desenfoque */
+  } 
+
+  /* Caja blanca centrada con contenido del formulario */
+  .modal-content {
+  background: white;
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 500px;
+            max-height: 80vh;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            position: relative;
+  }
+
+  /* Botón de cerrar (la "X") */
+  .close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #aaa; /* Color gris */
+    transition: color 0.3s; /* Suaviza el cambio al pasar el ratón */
+  }
+
+  .close:hover {
+    color: #ff6b6b; /* Rojo suave al pasar el ratón */
+  }
+
+  /* Contenedor de cada input con su etiqueta */
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block; /* La etiqueta en su propia línea */
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  /* Estilo de los inputs y del textarea */
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 3px;
+    border: 2px solid #e0e0e0; /* Borde gris claro */
+    border-radius: 10px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+  }
+
+  /* Al enfocar un input o textarea */
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #667eea; /* Borde azul-violeta al seleccionar */
+  }
+
+  .form-group textarea {
+    height: 100px;
+    resize: vertical; /* Se puede ajustar el alto */
+  }
+
+  /* Estilos para el texto de carga opcional */
+  .loading {
+    text-align: center;
+    padding: 40px;
+    color: white;
+  }
+
+  /* Animación de carga con forma de círculo giratorio */
+  .loader {
+    border: 4px solid rgba(255, 255, 255, 0.3); /* Parte translúcida */
+    border-top: 4px solid #ff6b6b; /* Parte superior con color */
+    border-radius: 50%; /* Forma circular */
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite; /* Animación infinita */
+    margin: 0 auto 20px; /* Centrado */
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

@@ -60,24 +60,6 @@ async function printMovies() { // creo una funcion para que me pinte o me imprim
   return movieList;
 }
 
-// // DELETE METODO DELETE
-// async function deleteMovie(id) {
-//   const response = await fetch(`http://localhost:3000/movies/${id}`, { // en delete hay que agragarler el id 
-//     method: "DELETE",
-//     headers: {
-//       'Content-Type': 'application/json'
-//     }
-
-//   });
-//   if (response.ok) { // si la constante response que es donde esta la url contesta bien  espera y carga mi lista de pelicualas
-//     await getMovies()
-//   } else {
-//     console.log("Error al elimianr el liro")
-//   }
-// }
-
-
-
 
  // CREATE METODO POST
     async function createMovie(newMovie) {// newBook es un parametro tipo  objeto
@@ -111,6 +93,15 @@ document.getElementById("formMovie").addEventListener("submit", function (e) {
 })
 
 
+// // MODAL FUNCION
+// function openModal (){
+//   document.getElementById ("movieModal").styled.display ="block"
+// }
+// function closeModal (){
+//    document.getElementById('movieModal').style.display = 'none';
+//    document.getElementById('formMovie').reset();
+// }
+
 // UPDATE METODO PUT
 async function updateMovie(id, editedMovie) {
   const response = await fetch(`http://localhost:3000/movies/${id}`, {
@@ -132,16 +123,21 @@ function editMovie(id) {
    const newDirector = prompt ("NUevo Director");
    const newAge = prompt ("NUevo Año");
    const newDescripcion = prompt ("NUeva Descripción");
+   const newImagen = prompt("Nueva URL de imagen (opcional):");
 
-   const editedMovie = {
-    title: newTitle,
-    director: newDirector,
-    age: newAge,
-    descripcion: newDescripcion 
-   };
-    
-   updateMovie(id, editedMovie);
- }
+  if (newTitle && newDirector && newAge && newDescripcion && newImagen) {
+    const editedMovie = {
+      title: newTitle,
+      director: newDirector,
+      age: newAge,
+      descripcion: newDescripcion,
+      imagen: newImagen || ""
+    };
+
+  }
+
+  updateMovie(id, editedMovie);
+}
 
 // // IMPRIMIR
 // let moviesContainer = document.getElementById('movie-section'); // declaro una constante y me voy a elgit id de html dode quiero que lo escriba
@@ -166,3 +162,20 @@ function editMovie(id) {
   
 //   return movieList;
 // }
+
+//  MODAL FUNCION
+ function openModal() {
+
+   document.getElementById ("movieModal").style.display = 'block';
+ }
+ function closeModal() {
+   document.getElementById('movieModal').style.display = 'none';
+    document.getElementById('formMovie').reset();
+ }
+ // Cerrar modal al hacer clic fuera
+        window.onclick = function(event) {
+            const modal = document.getElementById('movieModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
