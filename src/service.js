@@ -9,9 +9,9 @@ async function getMovies() {
       'Content-Type': 'application/json'
     }
   })
-  const movieData = await response.json()
-  console.log(movieData)
-  return movieData
+  const movieData = await response.json();
+  console.log(movieData);
+  return movieData;
 }
 getMovies()
 
@@ -47,9 +47,10 @@ async function printMovies() { // creo una funcion para que me pinte o me imprim
       <img src="${movie.imagen}" alt="${movie.title}" />
       <h1>${movie.title}</h1>
        <h3>${movie.director}</h3>
-       <h4>${movie.scienceField}</h4>
+       <h4>${movie.age}</h4>
        <p>${movie.description}</p>
-       <button onclick= deleteMovie(${movie.id})>Eliminar</button>
+       <button onclick="deleteMovie('${movie.id}')">Eliminar</button>
+        <button onclick="editMovie('${movie.id}')">Editar</button>
      </div>`
 
 
@@ -97,41 +98,50 @@ async function printMovies() { // creo una funcion para que me pinte o me imprim
   }
  }
 
- document.getElementById("formMovie").addEventListener("submit", function (e){
-   e.preventDefault();//evita que se recargue la pagina
+document.getElementById("formMovie").addEventListener("submit", function (e) {
+  e.preventDefault();//evita que se recargue la pagina
   const newMovie = { //objeto de la nueva pelicula, osea como van a quedar las peliculas cuando se de al boton de añadir pelicula (submit)
-        title: document.getElementById("title").value,//value es el valor que introdujo el usuario en el input
-        director: document.getElementById("director").value,
-       scienceField: document.getElementById("scienceField").value,
-       description: document.getElementById("description").value,
-       imagen: document.getElementById("imagen").value, // si estás usando imágenes
-     };
-     createMovie(newMovie); //llama al metodo POST
- })
+    title: document.getElementById("title").value,//value es el valor que introdujo el usuario en el input
+    director: document.getElementById("director").value,
+    age: document.getElementById("age").value,
+    description: document.getElementById("description").value,
+    
+  };
+  createMovie(newMovie); //llama al metodo POST
+})
 
 
 // UPDATE METODO PUT
 async function updateMovie(id, editedMovie) {
-  // pendiente de implementar
+  const response = await fetch(`http://localhost:3000/movies/${id}`, {
+    method: "PUT", // Método PUT para actualizar
+    headers: { "Content-Type": "application/json" },// Decimos que enviamos JSON
+    body: JSON.stringify(editedMovie) // Convertimos el objeto con los datos nuevos a JSON
+
+  });
+  if (response.ok){
+    console.log("Pelicula actualizada");
+    await printMovies();
+  }else {
+    console.log("error al actulizar pelicula");
+  }
 }
 
-// // DELETE METODO DELETE
-// async function deleteMovie(id) {
-//   const response = await fetch(`http://localhost:3000/movies/${id}`, { // en delete hay que agragarler el id 
-//     method: "DELETE",
-//     headers: {
-//       'Content-Type': 'application/json'
-//     }
+function editMovie(id) {
+   const newTitle = prompt ("NUevo Titulo");
+   const newDirector = prompt ("NUevo Director");
+   const newAge = prompt ("NUevo Año");
+   const newDescripcion = prompt ("NUeva Descripción");
 
-//   });
-//   if (response.ok) { // si la constante response que es donde esta la url contesta bien  espera y carga mi lista de pelicualas
-//     await getMovies()
-//   } else {
-//     console.log("Error al elimianr el liro")
-//   }
-// }
-
-
+   const editedMovie = {
+    title: newTitle,
+    director: newDirector,
+    age: newAge,
+    descripcion: newDescripcion 
+   };
+    
+   updateMovie(id, editedMovie);
+ }
 
 // // IMPRIMIR
 // let moviesContainer = document.getElementById('movie-section'); // declaro una constante y me voy a elgit id de html dode quiero que lo escriba

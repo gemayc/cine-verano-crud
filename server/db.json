@@ -6,10 +6,8 @@
       "age": "2007",
       "director": "Nacho Vigalondo",
       "description": "Un hombre se ve atrapado en un bucle temporal tras descubrir una extraña máquina. Un thriller de ciencia ficción inteligente que plantea preguntas sobre el tiempo y la causalidad.",
-      "scienceField": "Ciencia ficción",
-      "status": false,
-      "imagen": "imagenes/cronocrimenes.jpg",
-      "trailer": ""
+    
+      "imagen": "imagenes/cronocrimenes.jpg"
     },
     {
       "id": "2",
@@ -17,10 +15,8 @@
       "age": "2019",
       "director": "Drama histórico",
       "description": "Miguel de Unamuno se enfrenta a sus principios durante el inicio de la Guerra Civil. Una reflexión sobre el poder, la conciencia y el pensamiento libre.",
-      "scienceField": "Ciencia ficción",
-      "status": false,
-      "imagen": "imagenes/mienttas-dure-la-guerra.jpg",
-      "trailer": ""
+     
+      "imagen": "imagenes/mienttas-dure-la-guerra.jpg"
     },
     {
       "id": "3",
@@ -28,10 +24,8 @@
       "age": "2017",
       "director": "Hatem Khraiche",
       "description": "Una joven criada en una nave espacial descubre que su vida forma parte de un experimento secreto. Una historia que cuestiona la ética científica y la manipulación.",
-      "scienceField": "Ciencia ficción",
-      "status": false,
-      "imagen": "imagenes/orbita9.jpg",
-      "trailer": ""
+     
+      "imagen": "imagenes/orbita9.jpg"
     },
     {
       "id": "4",
@@ -39,10 +33,8 @@
       "age": "2016",
       "director": "Alberto Rodríguez",
       "description": "La historia real de Francisco Paesa, espía y estafador, que desafió al gobierno español. Un juego de engaños que explora el poder, la política y la inteligencia financiera.",
-      "scienceField": "Thriller político",
-      "status": false,
-      "imagen": "imagenes/el-hombre-de-las-mil-caras.jpg",
-      "trailer": ""
+     
+      "imagen": "imagenes/el-hombre-de-las-mil-caras.jpg"
     },
     {
       "id": "5",
@@ -50,10 +42,8 @@
       "age": "2011",
       "director": "Kike Maíllo",
       "description": "En un futuro donde los robots forman parte de la vida cotidiana, un ingeniero vuelve a su ciudad natal para diseñar un niño robot y se reencuentra con su pasado.",
-      "scienceField": "Ciencia ficción",
-      "status": false,
-      "imagen": "imagenes/eva (4).jpg",
-      "trailer": ""
+     
+      "imagen": "imagenes/eva (4).jpg"
     },
     {
       "id": "6",
@@ -61,10 +51,8 @@
       "age": "2006",
       "director": "Guillermo del Toro",
       "description": "En la posguerra española, una niña escapa a un mundo fantástico para enfrentar la dura realidad. Una fábula poderosa que mezcla historia, mitología y psicología.",
-      "scienceField": "Fantasía histórica",
-      "status": false,
-      "imagen": "imagenes/el-laberinto-de-fauno.jpg",
-      "trailer": ""
+     
+      "imagen": "imagenes/el-laberinto-de-fauno.jpg"
     },
     {
       "id": "7",
@@ -72,10 +60,8 @@
       "age": "2016",
       "director": "Mateo Gil",
       "description": "Un hombre decide congelarse tras una enfermedad terminal con la esperanza de ser revivido en el futuro. Un drama existencial sobre los límites de la medicina.",
-      "scienceField": "Ciencia ficción",
-      "status": false,
-      "imagen": "imagenes/proyecto-lazaro.jpg",
-      "trailer": ""
+    
+      "imagen": "imagenes/proyecto-lazaro.jpg"
     },
     {
       "id": "8",
@@ -83,18 +69,8 @@
       "age": "2016",
       "director": "J. A. Bayona",
       "description": "Un niño se enfrenta a la enfermedad de su madre con la ayuda de un monstruo imaginario. Una historia emocional sobre el poder de la mente y el proceso del duelo.",
-      "scienceField": "Drama psicológico",
-      "status": false,
-      "imagen": "imagenes/un-monstruo-viene-a-verme.jpg",
-      "trailer": ""
-    },
-    {
-      "id": "c986",
-      "title": "ffds",
-      "director": "dfdf",
-      "scienceField": "fsdf",
-      "description": "ddsfd",
-      "imagen": "dfd"
+
+      "imagen": "imagenes/un-monstruo-viene-a-verme.jpg"
     }
   ]
 }
