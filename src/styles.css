@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-     background-color: #141414;
+    background-color: #141414;
     color: #f5f5f1;
     /* accent: #e50914; */
 }
@@ -34,33 +34,70 @@ img {
 
 }
 
-
 .title-app {
-    text-align: center;
-    color: rgb(244, 244, 253);
+   font-family: 'Bebas Neue', sans-serif;
+  text-align: center;
+  color: rgb(244, 244, 253);
+    /* font-size: 10rem;  */
+    font-size: 65px; 
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+}
+h3 {
+   font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin: 1px 0;
+}
+h4 {
+font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  margin: 1px 0;
+}
+p {
+  font-family: "Roboto", sans-serif;
+   font-size: 15px;
+  margin: 1px 0;
+
 }
 
 
 .container-movies {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));  /* Grip con responsive*/
+    gap: 25px;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 
 }
 
 .movie-card {
-    background-color: rgb(74, 69, 68);
-    border-radius: 30px;
+
+  background-color: rgb(74, 69, 68);
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .movie-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 254, 254, 0.6);
+    transform: translateY(-5px);
+    /* box-shadow: 0 6px 20px rgba(255, 254, 254, 0.6); */
+    box-shadow: 0 8px 25px rgba(255, 254, 254, 0.4);  /* MEJORADO */
 }
 
-.button-print {
+.button-print ,.btn {
     background: linear-gradient(45deg, #ff6b6b, #ee5a24);
     color: white;
     border: none;
@@ -74,14 +111,37 @@ img {
     transition: all 0.3s ease;
 }
 
-.button-print:hover {
+.button-print:hover,.btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
 }
+.deleteMovie, .editMovie{
+  display: flex;
+  flex-direction: row;
+   background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    color: white;
+    border: none;
+    padding: 10px 15px; 
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(255, 107, 107, 0.3);  /* MEJORADO */
+}
+.card-buttons {
+   margin-top: 20px; /* manda los botones abajo */
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.anadir-pelicula {
+  color: #141414;
 
+}
 /* Modal: Fondo oscuro que cubre toda la pantalla y desenfoca el fondo */
   .modal {
-     
   display: none; /* Oculto por defecto */
   position: fixed; /* Fijo en la pantalla */
   z-index: 1000; /* Encima del resto */
@@ -96,7 +156,7 @@ img {
   /* Caja blanca centrada con contenido del formulario */
   .modal-content {
   background: white;
-            margin: 5% auto;
+    margin: 5% auto;
             padding: 30px;
             border-radius: 20px;
             width: 90%;
@@ -157,23 +217,23 @@ img {
     resize: vertical; /* Se puede ajustar el alto */
   }
 
-  /* Estilos para el texto de carga opcional */
+  /* Estilos para el texto de carga opcional
   .loading {
     text-align: center;
     padding: 40px;
     color: white;
   }
 
-  /* Animación de carga con forma de círculo giratorio */
+  /* Animación de carga con forma de círculo giratorio 
   .loader {
-    border: 4px solid rgba(255, 255, 255, 0.3); /* Parte translúcida */
-    border-top: 4px solid #ff6b6b; /* Parte superior con color */
-    border-radius: 50%; /* Forma circular */
+    border: 4px solid rgba(255, 255, 255, 0.3); /* Parte translúcida 
+    border-top: 4px solid #ff6b6b; /* Parte superior con color 
+    border-radius: 50%; /* Forma circular 
     width: 40px;
     height: 40px;
-    animation: spin 1s linear infinite; /* Animación infinita */
-    margin: 0 auto 20px; /* Centrado */
-  }
+    animation: spin 1s linear infinite; /* Animación infinita 
+    margin: 0 auto 20px; /* Centrado 
+  } */
 
   @keyframes spin {
     0% { transform: rotate(0deg); }
