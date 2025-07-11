@@ -1,9 +1,6 @@
 # 🎬 Cine de Verano – Aplicación Web para Gestión de Películas
 
 
-
-# 🎬 Cine de Verano
-
 ## 📖 Descripción
 
 **Cine de Verano** es una aplicación web full-stack que revoluciona la gestión de carteleras cinematográficas. Diseñada específicamente para cines al aire libre, combina una interfaz moderna y responsiva con funcionalidades avanzadas de administración de contenido.
