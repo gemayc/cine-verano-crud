@@ -1,89 +1,5 @@
 # 🎬 Cine de Verano – Aplicación Web para Gestión de Películas
 
-**Cine de Verano** es una aplicación web interactiva que permite gestionar una colección de películas para un cine al aire libre. El usuario puede visualizar, añadir, editar y eliminar películas mediante una interfaz moderna y responsiva, conectada a un backend simulado con JSON Server. Además, incluye un modelo 3D integrado para mejorar la experiencia visual.
-
----
-
-## 📋 Características principales
-
-- Listado dinámico de películas con imagen, título, director, año y descripción.  
-- Creación de nuevas películas mediante un formulario modal.  
-- Edición de películas existentes con formulario modal pre-cargado.  
-- Eliminación rápida y sencilla de películas.  
-- Visualización de un modelo 3D interactivo usando `<model-viewer>`.  
-- Diseño moderno con efectos de desenfoque, sombras y tipografías atractivas.  
-
----
-
-## 🛠️ Tecnologías utilizadas
-
-- **HTML5**  
-- **CSS3** (Diseño responsivo y moderno)  
-- **JavaScript (Vanilla)**  
-- **JSON Server**  
-- **Model Viewer** (visualizador 3D)  
-- **Google Fonts** (`Bebas Neue` y `Roboto`)  
-
----
-
-## 📁 Estructura del proyecto
-
-```cine-de-verano/
-├── assets/
-│ └── palomitas.glb
-├── src/
-│ └── service.js
-├── styles.css
-├── index.html
-├── db.json
-└── README.md ```
-
----
-
-## 🚀 Instalación y ejecución
-
-1. Clona el repositorio:
-
-```bash
-git clone https://github.com/gemayc/cine-de-verano.git
-cd cine-de-verano
-
-2. Instala JSON Server:
-
-   npm install -g json-server
-
-3. Crea el archivo db.json:
-
-```{
-  "movies": [
-    {
-      "id": 1,
-      "title": "Los cronocrímenes",
-      "director": "Nacho Vigalondo",
-      "age": 2007,
-      "imagen": "https://ejemplo.com/imagen.jpg",
-      "description": "Un hombre se ve atrapado en un bucle temporal tras descubrir una extraña máquina."
-    }
-  ]
-}```
-
-4. Levanta el servidor JSON:
-
-```json-server --watch db.json
-Abre el archivo index.html en tu navegador.
-
-Recomendado: usa la extensión Live Server en Visual Studio Code para evitar problemas de CORS y refresco automático.
-
-🧑‍💻 Uso de la aplicación
-Haz clic en Cargar Películas para obtener y mostrar la lista.
-
-Usa Agregar Película para abrir el formulario modal y añadir una nueva película.
-
-Los botones Editar y Eliminar en cada tarjeta permiten modificar o borrar películas.
-
-Los cambios se sincronizan con la base de datos JSON Server de forma automática.
-
-Visualiza el modelo 3D interactivo en la parte inferior para una experiencia mejorada.
 
 
 # 🎬 Cine de Verano
@@ -122,23 +38,9 @@ Facilitar la administración de películas en cines al aire libre mediante una i
 
 ---
 
-## 🛠️ Stack Tecnológico
-
-| Tecnología | Versión | Propósito |
-|------------|---------|-----------|
-| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) | 5.0 | Estructura semántica |
-| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) | 3.0 | Estilos y animaciones |
-| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) | ES6+ | Lógica de aplicación |
-| ![JSON Server](https://img.shields.io/badge/JSON%20Server-000000?style=flat&logo=json&logoColor=white) | ^0.17.0 | API REST simulada |
-| ![Model Viewer](https://img.shields.io/badge/Model%20Viewer-4285F4?style=flat&logo=google&logoColor=white) | ^3.0 | Visualización 3D |
-| ![Google Fonts](https://img.shields.io/badge/Google%20Fonts-4285F4?style=flat&logo=google&logoColor=white) | - | Tipografía premium |
-
----
-
 ## 📁 Estructura del Proyecto
 
-```
-cine-de-verano/
+```cine-de-verano/
 ├── 📁 assets/
 │   ├── 🎬 palomitas.glb          # Modelo 3D principal
 │   ├── 🖼️ screenshots/           # Capturas de pantalla
@@ -158,8 +60,7 @@ cine-de-verano/
 ├── 📄 db.json                    # Base de datos JSON
 ├── 📄 package.json               # Configuración del proyecto
 ├── 📄 .gitignore                 # Archivos ignorados
-└── 📄 README.md                  # Este archivo
-```
+└── 📄 README.md                  # Este archivo ```
 
 ---
 
@@ -218,7 +119,6 @@ docker build -t cine-de-verano .
 # Ejecutar contenedor
 docker run -p 8080:80 cine-de-verano
 ```
-
 ---
 
 ## 📘 Guía de Uso
