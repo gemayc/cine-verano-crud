@@ -19,9 +19,10 @@
         <button type="submit" class="button-print" onclick="openModal()">Agregar Pelicula</button>
 
     </div>
-    <section class="container-movies" id="movie-section"></section>
-
-       <!-- FORMULARIO PARA AGRGEGAR PELICULA DENTRO DE UN MODAL  -->
+    <div class=".contenido-principal">
+       <section class="container-movies" id="movie-section"></section>
+    </div>
+    <!-- FORMULARIO PARA AGRGEGAR PELICULA DENTRO DE UN MODAL  -->
     <div id="movieModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
@@ -78,24 +79,23 @@
             </form>
         </div>
     </div>
-<!-- <model-viewer
-  src="/src/assets/Sin_nombre.glb"
-  alt="Modelo Snack"
-  auto-rotate
-  camera-controls
-  shadow-intensity="1">
 
-</model-viewer> -->
-<model-viewer
-  src="assets/Sin_nombre.glb"
-  alt="Snacks de cine"
-  auto-rotate
-  camera-controls
-  shadow-intensity="1"
-  style="width: 800px; height: 600px;">
-</model-viewer>
+    <div class="model-container">
+        <model-viewer src="assets/palomitas.glb" alt="Snacks de cine" auto-rotate camera-controls shadow-intensity="1"
+            style="width: 750px; height: 550px;">
+        </model-viewer>
+    </div>
+
+    <footer>
+        <p class="p-footer">© 2025 · Proyecto realizado por Gema Yébenes para el Bootcamp Fullstack (Femcoders –
+            Factoría F5).</p>
+        <p class="p-footer">Todos los contenidos tienen fines educativos y de divulgación.</p>
+    </footer>
+
 
     <script src="../src\service.js"></script>
+
+
 </body>
 
 </html>

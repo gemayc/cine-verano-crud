@@ -1,12 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #141414;
+     background-color: #141414; 
+    /* background-color: #f5f5f1; */
     color: #f5f5f1;
     /* accent: #e50914; */
 }
 
 .container-titulos {
-    max-width: 1400px;
+     max-width: 1400px; 
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -38,8 +39,8 @@ img {
    font-family: 'Bebas Neue', sans-serif;
   text-align: center;
   color: rgb(244, 244, 253);
-    /* font-size: 10rem;  */
-    font-size: 65px; 
+     font-size: 4rem;  
+    /* font-size: 65px;  */
   letter-spacing: 2px;
   text-transform: uppercase;
 
@@ -74,6 +75,7 @@ p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    margin-bottom: 30px;
 
 }
 
@@ -89,6 +91,8 @@ p {
   flex-direction: column;
   height: 100%;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+   margin-bottom: 30px;
+ 
 }
 
 .movie-card:hover {
@@ -217,25 +221,25 @@ p {
     resize: vertical; /* Se puede ajustar el alto */
   }
 
-  /* Estilos para el texto de carga opcional
-  .loading {
-    text-align: center;
-    padding: 40px;
-    color: white;
-  }
-
-  /* Animación de carga con forma de círculo giratorio 
-  .loader {
-    border: 4px solid rgba(255, 255, 255, 0.3); /* Parte translúcida 
-    border-top: 4px solid #ff6b6b; /* Parte superior con color 
-    border-radius: 50%; /* Forma circular 
-    width: 40px;
-    height: 40px;
-    animation: spin 1s linear infinite; /* Animación infinita 
-    margin: 0 auto 20px; /* Centrado 
-  } */
-
-  @keyframes spin {
+    @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+  .model-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Alto del viewport completo */
+    margin-top: -105px; 
+   
+  }
+  footer {
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: auto; /* Empuja el footer hacia abajo */
+
+}
+.contenido-principal{
+  padding: 10px;
+}

@@ -65,7 +65,7 @@ async function printMovies() { // creo una funcion para que me pinte o me imprim
 async function createMovie(newMovie) {// newBook es un parametro tipo  objeto
   const response = await fetch("http://localhost:3000/movies", {// le dice al servidor que quiere crear un nuevo libro
     method: "POST", //informa al servidor  que enviaamos datos en foramto json
-    headers: { "Content-Type": "application json" },
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify(newMovie) // aqui va el objeto con los datos del nueva pelicula.JSON.stringify convierte el objeto javascrip en formato JSON
 
   });
@@ -113,8 +113,8 @@ window.onclick = function (event) {
 let idMovieEdit = null;
 //Creamos la función editMovie que se encargará de mostrar el formulario de edición y que este encuentre ya pre-cargado con la info de la película
 async function editMovie(id) {
-  console.log("Editando película con id:", id); // DEBUG
-  idMovieEdit = id; // Se actualiza la variable con el id de la película a editar.
+  console.log("Editando película con id:", id); 
+  idMovieEdit = id; // Se actualiza la variable con el id de la película a editar.aqui la variable ahora vale id
   const response = await fetch(`http://localhost:3000/movies/${id}`); //Obtenemos los datos de la película que se va a editar a través de una petición que hacemos a la API.
   const movie = await response.json(); //Guardamos la información en una constante llamada movie. y .json() transforma los datos en un objeto que podemos manipular en JavaScript.
   // Verifica que movie tenga datos:
@@ -126,11 +126,11 @@ async function editMovie(id) {
   document.getElementById("edit-age").value = movie.age;
   document.getElementById("edit-description").value = movie.description;
 
-  openEditModal();
+  openEditModal();// esta funcion viene del modal parao poder abrr el boton editar
 }
 
 //Ahora creamos la función para editar las películas directamente.
-async function updateMovie(e) {
+async function updateMovie(e) { // evita que se recargue la pagina
   e.preventDefault();
   //Vamos a crear un nuevo objeto con los datos actualizados de la película.
   const updateMovie = {
