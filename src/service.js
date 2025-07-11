@@ -87,6 +87,8 @@ document.getElementById("formMovie").addEventListener("submit", function (e) {
     director: document.getElementById("director").value,
     age: document.getElementById("age").value,
     description: document.getElementById("description").value,
+    imagen: document.getElementById("imagen").value,
+
 
   };
   createMovie(newMovie); //llama al metodo POST
